@@ -1,0 +1,33 @@
+<!-- Form to submit legal documents -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form for legal documents</title>
+</head>
+
+<body>
+    <form action="/submitDocument" method="post">
+        <label for="documentTitle">Document Title:</label>
+        <input type="text" id="documentTitle" name="documentTitle" required>
+
+        <label for="documentFile">Document File:</label>
+        <input type="file" id="documentFile" name="documentFile" required>
+
+        <label for="documentDescription">Document Description:</label>
+        <textarea id="documentDescription" name="documentDescription" rows="4" required></textarea>
+
+        <label for="documentCategory">Document Category:</label>
+        <select id="documentCategory" name="documentCategory" required>
+            <option value="">Select Category</option>
+            <option value="EmploymentContract">Employment Contract</option>
+            <option value="Leasing">Leasing</option>
+            <option value="Disclosure">Disclosure</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+

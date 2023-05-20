@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
         <title>Landing Page Example</title>
     </head>
     <body>
-        <navbar>
+        <navbar class="navbar">
+            <div class="logo">
+                <p>Company name</p>
+            </div>
             <div>
-                <ul>
-                    <li>Logo</li>
-                    <li>About</li>
-                    <li>Pricing</li>
+                <ul class="navbar-nav">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Documentation</a></li>
                 </ul>
             </div>
         </navbar>
-        <section>
-            <section>
-                <h2>Product Title</h2>
-                <p>Product Description</p>
+        <section class="main">
+            <section class="message">
+                <h2>Imagine creating great experiences with our set of digital products</h2>         
             </section>
-            <section>
-                <input type="text" />
-                <button>Join</button>
+            <section class="info-section">
+                <div class="call-to-action">
+                    <p>Join our newsletter</p>
+                </div>
+                <div>
+                    <input type="text" placeholder="youremail@domain.com" />
+                    <button>Join</button>
+                </div>
             </section>
         </section>
+        <footer>
+            <p>© Company name, 2023</p>
+        </footer>
     </body>
 </html>
